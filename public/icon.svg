@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071326"/>
+      <stop offset="50%" stop-color="#0b1e3b"/>
+      <stop offset="100%" stop-color="#0f274d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners for native app icon feel -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Outer Ring with Golden Accents -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#cyanGlow)" stroke-width="6" opacity="0.4"/>
+  <circle cx="256" cy="256" r="195" fill="none" stroke="url(#gold)" stroke-width="10" stroke-dasharray="14 10" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="175" fill="#071326" stroke="url(#gold)" stroke-width="4"/>
+
+  <!-- Five Pointed Star at Top (Pancasila & Ketuhanan) -->
+  <path d="M 256 100 L 268 135 L 305 135 L 275 156 L 286 191 L 256 169 L 226 191 L 237 156 L 207 135 L 244 135 Z" fill="url(#gold)" filter="url(#glow)"/>
+
+  <!-- Lotus Petals (Teratai Karang Taruna) -->
+  <path d="M 256 185 C 295 235 345 285 330 330 C 315 375 256 385 256 385 C 256 385 197 375 182 330 C 167 285 217 235 256 185 Z" fill="#1e3a8a" stroke="url(#gold)" stroke-width="6" opacity="0.8"/>
+  <path d="M 256 220 C 285 260 320 295 305 330 C 290 360 256 365 256 365 C 256 365 222 360 207 330 C 192 295 227 260 256 220 Z" fill="#2563eb" stroke="url(#cyanGlow)" stroke-width="4"/>
+
+  <!-- Central Torch Flame (Api Semangat Pemuda) -->
+  <path d="M 256 230 C 265 260 280 275 272 295 C 265 315 256 320 256 320 C 256 320 247 315 240 295 C 232 275 247 260 256 230 Z" fill="url(#gold)" filter="url(#glow)"/>
+
+  <!-- Ribbon Base with Aditya Karya Mahatva Yodha text banner -->
+  <path d="M 120 380 Q 256 425 392 380 L 380 415 Q 256 455 132 415 Z" fill="url(#gold)"/>
+  
+  <!-- Text 'KARANG TARUNA' and 'SUKAMANAH' -->
+  <text x="256" y="405" text-anchor="middle" fill="#071326" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="20" letter-spacing="2">KARANG TARUNA</text>
+  <text x="256" y="445" text-anchor="middle" fill="#fef08a" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="16" letter-spacing="4">SUKAMANAH</text>
+</svg>

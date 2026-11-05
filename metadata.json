@@ -1,0 +1,6 @@
+{
+  "name": "Portal Karang Taruna Sukamanah",
+  "description": "Aplikasi portal informasi resmi Karang Taruna: Profil Organisasi, Berita Kegiatan, Program Kerja, Kotak Aspirasi Warga, Lapak UMKM Produk Warga, dan Direktori Pengurus.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
